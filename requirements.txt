@@ -1,0 +1,10 @@
+pyyaml
+matplotlib
+numpy
+pandas
+torch
+lightning
+torchmetrics
+transformers==4.56.2
+wandb
+nltk

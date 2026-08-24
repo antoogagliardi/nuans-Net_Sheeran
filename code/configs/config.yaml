@@ -1,0 +1,23 @@
+project:
+  name: nuans-net_sheeran
+  seed: 10
+  device: mps                                           # cpu, cuda, mps
+
+paths:
+  data: data
+  model_files: model
+  load_existing_data: False
+
+
+training:
+  ckpt_path: ckpt
+  wandb_proj: Net_Sheeran
+  wandb_run: experiment_NSP
+  epochs: 5
+  resume: False                                         # True, False
+  # wandb_runID: njsh8379                               # LAST_RUN_ID is discovered once the project is created
+  last_epoch: 6                                         # Epoch to resume the training
+  add_epoch: 2                                          # Additional training epochs
+  batch_size: 16
+  grad_accumulation: 1                                 # 1 to avoid gradient accomulation
+  learning_rate: 0.001
